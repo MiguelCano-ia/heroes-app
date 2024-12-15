@@ -6,8 +6,6 @@ export const Navbar = () => {
   const navigate = useNavigate();
 
   const onLogout = () => {
-    // 1. Donde quiero navegar
-    // 2. No regresar all historial anterior
     navigate('/login', 
       { replace: true }
     );

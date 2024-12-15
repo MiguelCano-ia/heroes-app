@@ -4,7 +4,6 @@ import { useMemo } from "react";
 
 export const HeroPage = () => {
 
-  //obtener los params
   const { id } = useParams();
   const navigate = useNavigate();
   

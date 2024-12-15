@@ -10,12 +10,9 @@ interface SearchPageProps {
 
 export const SearchPage = () => {
 
-  // Obtener los datos de la navegacion
   const navigate = useNavigate();
-  // Obtener informacion de la ubicacion donde estoy
   const location = useLocation();
 
-  // Parsear los datos de la URL
   const { q = '' } = queryString.parse( location.search );
   const heroes = getHeroesByName( q as string );
 
