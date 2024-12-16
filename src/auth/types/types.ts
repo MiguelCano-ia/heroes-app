@@ -3,4 +3,6 @@
 export const types = {
   login: '[Auth] Login',
   logout: '[Auth] Logout',
-}
+} as const;
+
+// as const lo ve como el valor exacto, no una string.
