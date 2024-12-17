@@ -40,19 +40,21 @@ export const SearchPage = () => {
           <h4>Searching</h4>
           <hr />
           <form onSubmit={ onSearchSubmit } >
-            <input type="text"
+            <input 
+              type="text"
               placeholder="Find your hero"
               className="form-control"
               name="searchText"
               autoComplete="off"
               value={ searchText }
               onChange={ onInputChange }
+              aria-label="form"
             />
-          </form>
 
           <button className="btn mt-1 btn-outline-primary mb-5 mt-2">
             Search
           </button>
+          </form>
         </div>
 
         <div className="col-7">
@@ -83,6 +85,7 @@ export const SearchPage = () => {
           <div
             className="alert alert-danger animate__animated animate__fadeIn"
             style={{ display: showError ? '' : 'none' }}
+            aria-label="error-message"
           >
             There is no a hero with <b>{ q }</b>
           </div>
